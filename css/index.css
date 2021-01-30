@@ -224,10 +224,52 @@ nav div:last-of-type {
 }
 
 .features_blocks_main {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature_block_item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto;
 
 }
+
+.feature_block_item > .feature_text {
+    text-align: center;
+}
+
+/* Ultimate features section */
+
+.ultimate_features_items {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.ultimate_item {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.ultimate_item > h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #242f51;
+}
+
+
+
+
 
 
 
