@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: url('../images/topLayout.png');
+    background: url('images/topLayout.png');
     /*width: 1600px;*/
     height: 865px;
     background-size: auto;
@@ -277,7 +277,7 @@ nav div:last-of-type {
 /* Ultimate features section */
 
 .ultimate_features {
-    background: url('../images/sidePhone2.png') no-repeat right;
+    background: url('images/sidePhone2.png') no-repeat right;
 }
 
 .ultimate_features_items {
