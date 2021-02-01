@@ -14,9 +14,8 @@ body {
 
 header {
     background: url('images/topLayout.png');
-    /*width: 1600px;*/
-    height: 865px;
-    background-size: auto;
+    height: 60vw;
+    background-size: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -107,9 +106,8 @@ nav div:last-of-type {
 }
 
 .main_text {
-    margin-top: 260px;
-    margin-bottom: 275px;
-    width: 500px;
+    margin-top: 10vh;
+    max-width: 500px;
 }
 
 .main_buttons {
@@ -145,6 +143,7 @@ nav div:last-of-type {
 
 .companies_logo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     margin-top: 40px;
@@ -160,33 +159,63 @@ nav div:last-of-type {
 }
 
 /* Features section */
-
 .features_block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 80px;
+    margin-top: 80px;
+    width: 100%;
 }
 
-.features_heading {
-    margin-bottom: 100px;
+.features_main_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    height: 800px;
+    align-items: baseline;
 }
 
-.features_heading > h3 {
+.features_main_heading, .side_phone_text {
+    order: 1;
+    width: 40%;
+    align-self: flex-end;
+}
+
+.side_phone {
+    flex: 1;
+    width: 30%;
+}
+
+.side_phone > img {
+    width: 45vw;
+}
+
+.features_main_heading > h3 {
     color: #242f51;
     font-size: 36px;
     margin-bottom: 30px;
 }
 
-.features_heading > p {
+.features_main_text > h3 {
+    color: #242f51;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.features_main_text > p {
     margin-bottom: 60px;
+}
+
+.features {
+    margin-top: 20px;
 }
 
 .feature {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .feature_text {
@@ -214,8 +243,14 @@ nav div:last-of-type {
 }
 
 .feature_main_text {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.side_apps_image > img {
+    width: 50vw;
+    margin-right: 40px;
 }
 
 .feature_main_text h4 {
@@ -277,6 +312,7 @@ nav div:last-of-type {
 
 .ultimate_features {
     background: url('images/sidePhone2.png') no-repeat right;
+    background-size: 50vw;
 }
 
 .ultimate_features_items {
@@ -298,7 +334,56 @@ nav div:last-of-type {
     color: #242f51;
 }
 
+@media (max-width: 992px) {
+    header {
+        background-size: 100vw;
+        /*height: 50%;*/
+        margin-top: 10%;
+    }
 
+    .container {
+        margin: 50px auto;
+    }
+
+    .main_text {
+        margin-top: 10%;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 985px) {
+
+    .nav_menu {
+        flex-wrap: wrap;
+        margin-top: -40px;
+    }
+
+    nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav > button {
+        display: none;
+    }
+
+    .main_text {
+        margin-top: 0;
+    }
+
+    .side_phone {
+        flex: 1;
+        width: 50%;
+    }
+
+    .features_main_heading, .side_phone_text {
+        order: -1;
+        width: 40%;
+        align-self: center;
+    }
+}
 
 
 
