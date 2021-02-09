@@ -14,6 +14,7 @@ body {
 
 header {
     background: url('images/topLayout.png');
+    background-position: bottom;
     height: 60vw;
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -84,6 +85,10 @@ nav {
     font-style: normal;
     letter-spacing: -0.05em;
     line-height: 44px;
+}
+
+.nav_list > a:hover{
+    color: #fcae61
 }
 
 nav div:last-of-type {
@@ -337,7 +342,6 @@ nav div:last-of-type {
 @media (max-width: 992px) {
     header {
         background-size: 100vw;
-        /*height: 50%;*/
         margin-top: 10%;
     }
 
@@ -384,7 +388,6 @@ nav div:last-of-type {
         align-self: center;
     }
 }
-
 
 
 
