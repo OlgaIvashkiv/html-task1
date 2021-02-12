@@ -39,6 +39,7 @@ button {
 button:hover {
     background-color: #fcae61;
     color: white;
+    cursor: pointer;
 }
 
 .text {
